@@ -4,6 +4,7 @@ import styles from './style';
 import Header from './components/Header/header';
 import TodoItem from './components/TodoItem/todoItem';
 import React from 'react';
+import AddToDo from './components/AddToDo/AddToDo';
 
 export default function App() {
   const [todo, setTodo] = useState([
@@ -18,10 +19,20 @@ export default function App() {
     })
   }
 
+  const submitHandler = (text) => {
+    setTodo((e) =>{
+      return [
+        { text:text, key: Math.random().toString()},
+        ...e
+      ]
+    })
+  }
+
   return (
     <View style={styles.container}>
       <Header />
       <View style={styles.content}>
+        <AddToDo submitHandler={submitHandler}/>
         <View style={styles.list}>
         <FlatList
             data={todo}
