@@ -4,10 +4,20 @@ Mobile App With React Native & TypeScript
 
 # Installation
 
-Clone the repository
+  Download
   
-  cd ToDo
+  Open Terminal and write
   
-  npm i
+    cd ToDo
+ 
+  Install node_modules
+  
+  
+    npm i
+  
+  
+  Run Project:
+  
   
   yarn start
+
