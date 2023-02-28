@@ -21,3 +21,4 @@ Mobile App With React Native & TypeScript
   
   yarn start
 
+  Enjoy
