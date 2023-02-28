@@ -19,6 +19,6 @@ Mobile App With React Native & TypeScript
   Run Project:
   
   
-  yarn start
+    yarn start
 
   Enjoy
